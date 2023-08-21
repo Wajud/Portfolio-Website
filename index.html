@@ -50,21 +50,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-[Roboto] overflow-x-hidden">
-    <header class="bg-gray-900 px-8 text-white flex justify-between border-b-2 fixed top-0 left-0 z-50 w-full">
+    <header class="bg-gray-900 px-4 lg:px-8 text-white flex justify-between border-b-2 fixed top-0 left-0 z-50 w-full">
       <div class="mt-4 w-8 h-8 bg-white rounded-full shrink-0"></div>
       <nav>
-            <ul class="flex gap-4 font-bold">
-                <li class="py-4 px-7 relative hover:bg-gray-700 relative"><a href="/" class="relative z-20">About</a></li>
-                <li class="py-4 px-7 hover:bg-gray-700"><a href="#skills">Skills</a></li>
-                <li class="py-4 px-7 hover:bg-gray-700"><a href="#projects">Projects</a></li>
-                <li class="py-4 px-7 hover:bg-gray-700"><a href="#testimonials">Testimonials</a></li>
+            <ul class="flex gap-2 lg:gap-4 font-bold">
+                <li class="py-4 px-2 lg:px-7 relative hover:bg-gray-700 relative"><a href="/" class="relative z-20">About</a></li>
+                <li class="py-4 px-2 lg:px-7 hover:bg-gray-700"><a href="#skills">Skills</a></li>
+                <li class="py-4 px-2 lg:px-7 hover:bg-gray-700"><a href="#projects">Projects</a></li>
+                <li class="py-4 px-2 lg:px-7 hover:bg-gray-700"><a href="#testimonials">Testimonials</a></li>
             </ul>
       </nav>
     </header>
     <main>
       <section class="flex justify-between items-center pl-2">
            <div class="flex gap-20 justify-between items-center py-20 slide-from-left">
-              <aside class="text-white pl-2 pr-2 py-8 border-r-2">
+              <aside class="text-white pl-2 pr-2 py-8 border-r-2 hidden lg:block">
                 <h1>Connect with me via:</h1>
                 <a class="flex gap-2 items-center py-1" href="mailto:kareemwajud@yahoo.com" target="_blank">
                   <div>
@@ -84,16 +84,22 @@
                   </div>
                   <p class="text-xs text-gray-300">Twitter</p>
                 </a>
+                <a class="flex gap-2 items-center py-1" href="https://github.com/Wajud" target="_blank">
+                  <div>
+                    <img src="images/git.png" class="w-4 h-[17px] bg-white object-cover rounded-full" alt="git">
+                  </div>
+                  <p class="text-xs text-gray-300">GitHub</p>
+                </a>
               </aside>
 
-              <div>
+              <div class="px-8">
                 <h1 class="font-bold text-4xl mb-6">Hi, I am Wajud.</h1>
                 <p class="text-xs">I am Software Engineer with a knack for creating dynamic websites</p>
               </div>
                 
             </div>
 
-            <div class="slide-from-right pr-20">
+            <div class="slide-from-right pr-20 py-20 lg:py-0">
                 <img class="w-40 h-40 object-cover rounded-full slide-from-right" src="images/sasol.jpg" alt="">
             </div>
             
@@ -102,78 +108,89 @@
         <!--Skills-->
 
         <section class="py-20 bg-[rgb(130,122,111)]" id="skills">
-            <h1 class="font-bold text-4xl pl-20">My Skills</h1>
-            <div class="pl-20 w-4/5 mr-auto flex justify-between py-8 font-semibold">
-                <div class="flex flex-col justify-center items-center gap-4">
-                   <p class="text-xl uppercase text-center">html</p>
-                   <div>
-                    <img class="w-28 h-28 rounded-full object-cover" src="images/html-3.png" alt="">
+            <h1 class="font-bold text-4xl text-center">My Skills</h1>
+            <div class="w-[90%] mx-auto grid grid-cols-2 gap-4 md:gap-0 md:flex flex-row justify-between py-8 font-semibold">
+                <div class="flex flex-col justify-center items-center gap-4 mb-12 lg:mb-8">
+                   <p class="text-xl uppercase text-center mb-2">html</p>
+                   <div class="flex justify-center">
+                    <img class="w-28 h-28 rounded-full object-cover" src="images/html.png" alt="">
                    </div> 
                 </div>
-                <div class="flex flex-col gap-4 align-center justify-between">
-                 <p class="text-xl uppercase text-center">css</p>
-                 <div>
-                   <img class="w-28 h-28 object-cover rounded-full" src="images/css-4.png" alt="">  
-                 </div>
-                   
+                <div class="flex flex-col justify-center items-center gap-4 mb-12 lg:mb-8">
+                   <p class="text-xl uppercase text-center mb-2">css</p>
+                   <div class="flex justify-center">
+                    <img class="w-28 h-28 rounded-full object-cover" src="images/css.png" alt="">
+                   </div> 
                 </div>
-                <div class="flex flex-col gap-4 align-center justify-between">
-                  <p class="text-xl text-center">JavaScript</p>  
-                  <div>
-                    <img class="w-28 h-28 object-cover rounded-full" src="images/js.png" alt="">
-                  </div>
-                  
+                <div class="flex flex-col justify-center items-center gap-4 mb-12 lg:mb-8">
+                   <p class="text-xl text-center mb-2">JavaScript</p>
+                   <div class="flex justify-center">
+                    <img class="w-28 h-28 rounded-full object-cover" src="images/js.png" alt="">
+                   </div> 
                 </div>
-                <div class="flex flex-col gap-4 align-center justify-between">
-                   <p class="text-xl text-center">TailwindCSS</p>
-                   <div>
-                    <img class="w-28 h-28 object-cover rounded-full" src="images/tailwind.png" alt="">
-                   </div>
-                    
+                <div class="flex flex-col justify-center items-center gap-4 mb-12 lg:mb-8">
+                   <p class="text-xl text-center mb-2">TailwindCSS</p>
+                   <div class="flex justify-center">
+                    <img class="w-28 h-28 rounded-full object-cover" src="images/tailwind.png" alt="">
+                   </div> 
                 </div>
-                <div class="flex flex-col gap-4 align-center justify-between">
-                   <p class="text-xl text-center">Git and GitHub</p>
-                   <div>
-                    <img class="w-28 h-28 object-cover rounded-full" src="images/git.png" alt="">
-                   </div>
-                    
+                <div class="flex flex-col justify-center items-center gap-4 mb-12 lg:mb-8">
+                   <p class="text-xl text-center mb-2">Git and GitHub</p>
+                   <div class="flex justify-center">
+                    <img class="w-28 h-28 rounded-full object-cover" src="images/git.png" alt="">
+                   </div> 
                 </div>
-                
+                <div class="flex flex-col justify-center items-center gap-4 -mt-12 lg:-mt-8">
+                   <p class="text-xl text-center mb-2">React JS</p>
+                   <div class="flex justify-center">
+                    <img class="w-28 h-28 rounded-full object-cover" src="images/reactjs.png" alt="">
+                   </div> 
+                </div>
+       
+        
             </div>
           </section>
 
 
        <!--Projects-->
-      <section class="py-20 px-20" id="projects">
-        <h1 class="text-4xl text-white font-bold mb-12">Check Out Some of My Projects</h1>
-        <div class="flex gap-4">
+      <section class="py-20 w-[90%] mx-auto" id="projects">
+        <h1 class="text-4xl text-white font-bold mb-12 text-center">Check Out Some of My Projects</h1>
+        <div class="flex flex-col items-center md:flex-row gap-4">
+          <a class="relative w-60 h-40 rounded-md overflow-hidden" href="https://homepage-981.netlify.app/" target="_blank">
+            <img src="images/room-homepage.jpg" class="w-60 h-40 object-fit" alt="">
+            <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
+            <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Room Homepage Project</h1>
+            </div>
+          </a>
+          
           <a class="relative w-60 h-40 rounded-md overflow-hidden" href="http://social-media-dashboard-987.netlify.app" target="_blank">
             <img src="images/social-media-desktop.jpg" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
             <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
-              <h1 class="pl-4 pr-2 leading-tight font-bold text-4xl">Social Media Dashboard</h1>
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Social Media Dashboard</h1>
             </div>
-          </da>
+          </a>
           
           <a class="relative w-60 h-40 rounded-md overflow-hidden" href="http://tip-calculator-987.netlify.app" target="_blank">
             <img src="images/tip-calculator-desktop.jpg" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
             <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
-              <h1 class="pl-4 pr-2 leading-tight font-bold text-4xl">Tip Calculator App</h1>
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Tip Calculator App</h1>
             </div>
           </a>
           <a class="relative w-60 h-40 rounded-md overflow-hidden hover:bg-gray-700" href="https://flyo-darklandingpage-101.netlify.app" target="_blank">
             <img src="images/flyo-desktop.jpg" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
             <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
-              <h1 class="pl-4 pr-2 leading-tight font-bold text-4xl">Business Landing Page</h1>
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Business Landing Page</h1>
             </div>
           </a>
           <a class="relative w-60 h-40 rounded-md overflow-hidden" href="http://hotel-project-phi.vercel.app" target="_blank">
             <img src="images/love hotel.PNG" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
             <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
-              <h1 class="pl-4 pr-2 leading-tight font-bold text-4xl">Hotel Websites</h1>
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Hotel Website</h1>
             </div>
           </a>
 
@@ -182,8 +199,8 @@
 
       <!--Testimonials-->
       <section class="px-20 py-20 bg-[rgb(130,122,111)] text-white" id="testimonials">
-        <h1 class="text-4xl font-bold mb-12">Testimonials</h1>
-        <div class="flex gap-6 bg-gray-900 py-8 rounded-md px-8">
+        <h1 class="text-4xl font-bold mb-12 text-center">Testimonials</h1>
+        <div class="flex flex-col md:flex-row gap-6 bg-gray-900 py-8 rounded-md px-8 mb-6">
           <div>
           <img src="images/mubarak.jpeg" class="w-32 h-32 rounded-full" alt="mubarak">
           </div>
@@ -198,10 +215,9 @@
           </div>
           
         </div>
-       
-        <div class="flex gap-6 bg-gray-900 py-8 rounded-md px-8 mt-8">
-          <div class="flex flex-col justify-center">
-            <img src="images/musa.jpeg" class="w-52 h-32 rounded-full object-cover" alt="musa">
+        <div class="flex flex-col md:flex-row gap-6 bg-gray-900 py-8 rounded-md px-8">
+          <div>
+          <img src="images/musa.jpeg" class="w-32 h-32 rounded-full md:w-52 object-cover" alt="musa">
           </div>
           <div class="py-4 flex flex-col justify-center gap-4">
             <div>
@@ -219,8 +235,37 @@
         
     </main>
 
-    <footer class="text-center py-4 text-white">
-      <p>Wajud Kareem,  2023.</p>
+    <footer class="w-[90%] mx-auto py-4 text-white">
+ 
+        <h1 class="mb-4 text-2xl font-semibold text-left">Connect with me via:</h1>
+        <div class="flex flex-col items-start md:items-center md:flex-row gap-4 md:gap-12">
+          <a class="flex gap-2 items-start md:items-center py-1" href="mailto:kareemwajud@yahoo.com" target="_blank">
+            <div>
+              <img src="images/carry.jpg" class="w-4 h-[17px] object-cover rounded-full" alt="gmail">
+            </div>
+            <p class="text-xs text-gray-300">wajudkareem757@gmail.com</p>
+          </a>
+          <a class="flex gap-2 items-center py-1" href="https://github.com/Wajud" target="_blank">
+            <div>
+              <img src="images/git.png" class="w-4 h-[17px] object-cover rounded-full" alt="gmail">
+            </div>
+            <p class="text-xs text-gray-300">GitHub - Wajud</p>
+          </a>
+          <a class="flex gap-2 items-center py-1" href="https://www.linkedin.com/in/wajud-kareem-92537115a/" target="_blank">
+            <div>
+              <img src="images/linkedin.png" class="w-4 h-[17px] bg-white object-cover rounded-full" alt="linkedin-logo">
+            </div>
+            <p class="text-xs text-gray-300">LinkedIn</p>
+          </a>
+          <a class="flex gap-2 items-center py-1" href="https://twitter.com/kareem_wajud?t=6PEz6CI7m1hDPOtvRSCgsQ&s=09" target="_blank">
+            <div>
+              <img src="images/icon-twitter.svg" class="w-4 h-[17px] bg-white object-cover rounded-full" alt="twitter">
+            </div>
+            <p class="text-xs text-gray-300">Twitter</p>
+          </a>
+
+        </div>
+        
     </footer>
     
 </body>
