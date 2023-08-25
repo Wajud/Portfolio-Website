@@ -45,6 +45,21 @@
           
         }
 
+        .typing{
+          animation: typewriter 4s steps(20) 3s infinite both, blinkCursor 400ms steps(20) infinite;
+        }
+        
+        @keyframes typewriter {
+
+          from{
+            width: 0%;
+          }
+          
+          to{
+            width: 100%;
+          }
+        }
+
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,7 +68,7 @@
     <header class="bg-gray-900 px-4 lg:px-8 text-white flex justify-between border-b-2 fixed top-0 left-0 z-50 w-full">
       <div class="mt-4 w-8 h-8 bg-white rounded-full shrink-0"></div>
       <nav>
-            <ul class="flex gap-2 lg:gap-4 font-bold">
+            <ul class="pl-4 flex gap-2 lg:gap-4 font-bold">
                 <li class="py-4 px-2 lg:px-7 relative hover:bg-gray-700 relative"><a href="/" class="relative z-20">About</a></li>
                 <li class="py-4 px-2 lg:px-7 hover:bg-gray-700"><a href="#skills">Skills</a></li>
                 <li class="py-4 px-2 lg:px-7 hover:bg-gray-700"><a href="#projects">Projects</a></li>
@@ -64,7 +79,7 @@
     <main>
       <section class="flex justify-between items-center pl-2">
            <div class="flex gap-20 justify-between items-center py-20 slide-from-left">
-              <aside class="text-white pl-2 pr-2 py-8 border-r-2 hidden lg:block">
+              <aside class="text-white pl-8 pr-2 py-8 border-r-2 hidden lg:block">
                 <h1>Connect with me via:</h1>
                 <a class="flex gap-2 items-center py-1" href="mailto:kareemwajud@yahoo.com" target="_blank">
                   <div>
@@ -93,7 +108,7 @@
               </aside>
 
               <div class="px-8">
-                <h1 class="font-bold text-4xl mb-6">Hi, I am Wajud.</h1>
+                <h1 class="text-4xl mb-6">Hi, I am Wajud</h1>
                 <p class="text-xs">I am Software Engineer with a knack for creating dynamic websites</p>
                 <button class="py-2 px-8 mt-4 text-md font-semibold text-center rounded-sm bg-gray-400 hover:bg-gray-600 text-white"><a href="images/Kareem Wajud_resume.pdf" target="_blank">Resume</a></button>
               </div>
@@ -156,12 +171,20 @@
        <!--Projects-->
       <section class="py-20 w-[90%] mx-auto" id="projects">
         <h1 class="text-4xl text-white font-bold mb-12 text-center">Check Out Some of My Projects</h1>
-        <div class="flex flex-col items-center md:flex-row gap-4">
+        <div class="grid justify-center md:grid-cols-3 gap-4 lg:max-w-[80%] lg:mx-auto">
           <a class="relative w-60 h-40 rounded-md overflow-hidden" href="https://homepage-981.netlify.app/" target="_blank">
             <img src="images/room-homepage.jpg" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
             <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
               <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Room Homepage Project</h1>
+            </div>
+          </a>
+
+          <a class="relative w-60 h-40 rounded-md overflow-hidden" href="http://tip-calculator-987.netlify.app" target="_blank">
+            <img src="images/tip-calculator-desktop.jpg" class="w-60 h-40 object-fit" alt="">
+            <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
+            <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Tip Calculator App</h1>
             </div>
           </a>
           
@@ -172,14 +195,16 @@
               <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Social Media Dashboard</h1>
             </div>
           </a>
-          
-          <a class="relative w-60 h-40 rounded-md overflow-hidden" href="http://tip-calculator-987.netlify.app" target="_blank">
-            <img src="images/tip-calculator-desktop.jpg" class="w-60 h-40 object-fit" alt="">
+
+          <a class="relative w-60 h-40 rounded-md overflow-hidden" href="https://advicegenerator011.netlify.app/" target="_blank">
+            <img src="images/advice-generator.jpg" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
             <div class="absolute top-0 left-0 w-full h-full z-20 hover:bg-gray-700 flex flex-col justify-center">
-              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Tip Calculator App</h1>
+              <h1 class="pl-4 pr-2 leading-tight font-bold text-2xl">Advice Generator</h1>
             </div>
           </a>
+          
+         
           <a class="relative w-60 h-40 rounded-md overflow-hidden hover:bg-gray-700" href="https://delightful-flyo.netlify.app/" target="_blank">
             <img src="images/flyo-desktop.jpg" class="w-60 h-40 object-fit" alt="">
             <div class="z-10 w-full h-full bg-gray-400 absolute top-0 left-0 opacity-90 hover:opacity-100"></div>
